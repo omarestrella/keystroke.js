@@ -1,0 +1,20 @@
+{
+    "name": "keystroke.js",
+    "version": "0.0.1",
+    "main": "keystroke.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/omarestrella/keystroke.js"
+    },
+    "keywords": [
+        "keyboard",
+        "keystroke",
+        "keypress",
+        "keycode"
+    ],
+    "component": {
+        "scripts": {
+            "keystroke": "keystroke.js"
+        }
+    }
+}
