@@ -2,6 +2,14 @@
 
 Got tired of typing the magic numbers that are keypress codes
 
+# Browser support
+
+ - Firefox 4+
+ - Chrome 5+
+ - Internet Explorer 9+
+ - Opera 12+
+ - Safari 5+
+
 # License
 
 The MIT License (MIT)
