@@ -131,7 +131,7 @@
             isAlphabet: _isAlphabet,
             isNavigation: _isNavigation,
             isWhitespace: _isWhitespace,
-            toString: _toString
-        }
+            codeToString: _toString
+        };
     }
 }(window));
