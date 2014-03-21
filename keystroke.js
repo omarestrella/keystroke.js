@@ -82,6 +82,8 @@
         RIGHT_ARROW: 39,
         DOWN_ARROW: 40
     };
+    
+    var ESCAPE = 27;
 
     function _keyForKeyCode(keyCode, object) {
         var key;
@@ -110,26 +112,31 @@
     function _isWhitespace(keyCode) {
         return keyCode === whitespace.SPACE || keyCode === whitespace.ENTER || keyCode === whitespace.TAB;
     }
+    
+    function _isEscape(keyCode) {
+        return keyCode === ESCAPE;
+    }
 
     function _toString(keyCode) {
-        var key;
-
         if (_isAlphabet(keyCode) || _isNumber(keyCode)) {
             return String.fromCharCode(keyCode);
         } else if (_isNavigation(keyCode)) {
-            key = _keyForKeyCode(keyCode, navigation);
+            return _keyForKeyCode(keyCode, navigation);
         } else if(_isWhitespace(keyCode)) {
-            key = _keyForKeyCode(keyCode, whitespace);
+            return _keyForKeyCode(keyCode, whitespace);
+        } else if (_isEscape(keyCode)) {
+            return "ESCAPE";
         }
-
-        return key;
+        
+        return keyCode;
     }
 
     if (!global.keystroke) {
         global.keystroke = {
-            isNumber: _isNumber,
             isAlphabet: _isAlphabet,
+            isEscape: _isEscape,
             isNavigation: _isNavigation,
+            isNumber: _isNumber,
             isWhitespace: _isWhitespace,
             codeToString: _toString
         };
