@@ -116,7 +116,7 @@ export function isEscape(keyCode) {
   return keyCode === ESCAPE;
 }
 
-export function codetoString(keyCode) {
+export function codeToString(keyCode) {
   if (isAlphabet(keyCode) || isNumber(keyCode)) {
     return String.fromCharCode(keyCode);
   } else if (isNavigation(keyCode)) {
