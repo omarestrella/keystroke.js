@@ -122,7 +122,7 @@
     return keyCode === ESCAPE;
   }
 
-  function codetoString(keyCode) {
+  function codeToString(keyCode) {
     if (isAlphabet(keyCode) || isNumber(keyCode)) {
       return String.fromCharCode(keyCode);
     } else if (isNavigation(keyCode)) {
@@ -145,7 +145,7 @@
     codeToString
   };
 
-  exports.codetoString = codetoString;
+  exports.codeToString = codeToString;
   exports.default = keystroke;
   exports.isAlphabet = isAlphabet;
   exports.isEscape = isEscape;
