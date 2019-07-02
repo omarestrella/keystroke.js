@@ -1,7 +1,7 @@
 {
   "name": "keystroke",
   "description": "A keypress code-to-label helper library for the browser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/keystroke.js",
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
     "keycode"
   ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "rollup keystroke.js --file dist/keystroke.js --format umd --name keystroke"
   }
 }
