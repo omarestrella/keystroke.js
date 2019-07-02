@@ -1,5 +1,6 @@
 {
-  "name": "keystroke.js",
+  "name": "keystroke",
+  "description": "A keypress code-to-label helper library for the browser",
   "version": "1.0.0",
   "main": "dist/keystroke.js",
   "repository": {
