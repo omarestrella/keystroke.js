@@ -1,20 +1,20 @@
 {
-    "name": "keystroke.js",
-    "version": "0.0.2",
-    "main": "keystroke.js",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/omarestrella/keystroke.js"
-    },
-    "keywords": [
-        "keyboard",
-        "keystroke",
-        "keypress",
-        "keycode"
-    ],
-    "component": {
-        "scripts": {
-            "keystroke": "keystroke.js"
-        }
-    }
+  "name": "keystroke.js",
+  "version": "1.0.0",
+  "main": "dist/keystroke.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/omarestrella/keystroke.js"
+  },
+  "author": "Omar Estrella <omarestrella@bitcreative.net>",
+  "homepage": "https://github.com/omarestrella/keystroke.js",
+  "keywords": [
+    "keyboard",
+    "keystroke",
+    "keypress",
+    "keycode"
+  ],
+  "scripts": {
+    "build": "rollup keystroke.js --file dist/keystroke.js --format umd --name keystroke"
+  }
 }
